@@ -14,11 +14,23 @@ get '/hello/' do
 end
 
 post '/hello/' do
-    greeting 	= params[:greeting] || "Hi There"
-    name 		= params[:name]     || "Nobody"
-	country 	= params[:country]  || "India"
-
-    erb :index, :locals => {'greeting' => greeting, 'name' => name, 'country' => country}
+    greeting 	= params[:greeting] 	|| "Hi There"
+    name 		= params[:name]     	|| "Nobody"
+	address		= params[:address]     	|| "Somewhere"
+	city		= params[:city]     	|| "NoCity"
+	zipcode		= params[:zipcode]     	|| "Nobody"
+	country 	= params[:country]  	|| "India"
+	email	 	= params[:email]  		|| "basharat@shipstr.com"
+	
+    erb :index, :locals => {
+							'greeting' => greeting, 
+							'name' => name, 
+							'address' => address,
+							'city' => city, 
+							'zipcode' => zipcode, 
+							'country' => country,
+							'email' => email
+							}
 end
 
 

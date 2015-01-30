@@ -116,7 +116,7 @@ class LaserWeaponArmory < Scene
 	print "[keypad]> "
     guess = $stdin.gets.chomp
     guesses = 1   #there was a bug here 
-
+	binding.pry
     while guess != code && guesses < 10
       puts "BZZZZEDDD!"
       guesses += 1

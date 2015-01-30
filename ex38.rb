@@ -13,6 +13,7 @@ print more_stuff
 
 # using math to make sure there's 10 items
 while stuff.length != 10
+  binding.pry
   next_one = more_stuff.pop #get the last item from the array
   print "\n"
   puts "Adding: #{next_one}"  
