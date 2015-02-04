@@ -1,4 +1,7 @@
 #Bundle Install  - bundle install
+#bundle exec rake test -v
+#bundle exec guard init
+#bundle exec guard - Run on separate command line
 # sample_app 
 
 #source 'https://rubygems.org'
@@ -34,6 +37,7 @@ group :production do
   gem 'rails_12factor', '0.0.2'
 end
 
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 #gem 'rails', '4.2.0'
