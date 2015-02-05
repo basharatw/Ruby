@@ -1,7 +1,7 @@
 #Bundle Install  - bundle install
 #bundle exec rake test -v
 #bundle exec guard init
-#bundle exec guard - Run on separate command line
+#bundle exec guard --> Run on separate command line
 # sample_app 
 
 #source 'https://rubygems.org'
