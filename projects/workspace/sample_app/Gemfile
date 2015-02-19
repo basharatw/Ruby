@@ -3,6 +3,7 @@
 #bundle exec guard init
 #bundle exec guard --> Run on separate command line
 #bundle exec rake test:integration  --> Run the integration tests
+#bundle exec rake test:models  - tests for data 
 # sample_app 
 
 #source 'https://rubygems.org'
