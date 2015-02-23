@@ -1,16 +1,16 @@
 #Bundle Install  - bundle install
+#Bundle update   - bundle update
 #bundle exec rake test -v
 #bundle exec guard init
 #bundle exec guard --> Run on separate command line
 #bundle exec rake test:integration  --> Run the integration tests
 #bundle exec rake test:models  - tests for data 
 # sample_app 
-
-#source 'https://rubygems.org'
+#db:test:prepare -- this will helps in brining the schema up to date
 
 source 'https://rubygems.org'
-
 gem 'rails',                '4.2.0'
+gem 'bcrypt',               '3.1.9'
 gem 'sass-rails',           '5.0.1'
 gem 'uglifier',             '2.5.3'
 gem 'coffee-rails',         '4.1.0'
